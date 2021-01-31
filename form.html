@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <h1>Buat Account Baru!</h1>
+    </header>
+    <body>
+        <form action="./welcome.html" method="POST">
+            <h3>Sign Up Form</h3>
+            <label for="fname">First name:</label>
+            <br>
+            <input type="text" id="fname" name="fname" pattern="[a-zA-z]+" required>
+            <br>
+            <br>
+            <label for="lname">Last name:</label>
+            <br>
+            <input id="lname" type="text" name="lname" pattern="[a-zA-z]+" required>
+            <br>
+            <br>
+            <label for="gender">Gender:</label>
+            <br>
+            <input id="male" name="gender" type="radio" required value="Male">
+            <label for="male">Male</label>
+            <br>
+            <input id="female" name="gender" type="radio" required value="Female">
+            <label for="female"> Female</label>
+            <br>
+            <input id="other" name="gender" type="radio" required value="Other">
+            <label for="other"> Other</label>
+            <br>
+            <br>
+            <label for="national">Nationality:</label>
+            <br>
+            <select id="national" name="national"required>
+                <option value="indonesian">Indonesian</option>
+                <option value="singaporean">Singaporean</option>
+                <option value="malaysian">Malaysian</option>
+                <option value="australian">Australian</option>
+            </select>
+            <br>
+            <br>
+            <label for="language">Language Spoken:</label>
+            <br>
+            <input id="bindo" name="language" type="checkbox" value="bahasa_indonesia">
+            <label for="bindo"> Bahasa Indonesia</label>
+            <br>
+            <input id="english" name="language" type="checkbox" value="english">
+            <label for="english"> English</label>
+            <br>
+            <input id="Other" name="language" type="checkbox" value="other">
+            <label for="other"> Other</label>
+            <br>
+            <br>
+            <label for="bio">Bio:</label>
+            <br>
+            <textarea id="bio" name="bio" required rows="10" cols="30"></textarea>
+
+
+            <br>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </body>
+
+</html>
